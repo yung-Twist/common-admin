@@ -30,11 +30,6 @@
     </script>
   </head>
   <body>
-    <noscript>
-      <strong>
-        Sorry, D2Admin will not work properly without JavaScript support. Enable JavaScript for browsers and continue.
-      </strong>
-    </noscript>
     <div id="app">
       <div class="d2-home">
         <div class="d2-home__main">
@@ -56,5 +51,6 @@
     <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
     <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
     <% } %>
+    <script src="./config.js"></script>
   </body>
 </html>
